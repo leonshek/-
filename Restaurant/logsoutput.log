@@ -1,8 +1,0 @@
-2016-05-02 20:17:47  [ http-bio-8080-exec-1:0 ] - [ DEBUG ]  ²¤ÂÜ
-2016-05-02 20:17:47  [ http-bio-8080-exec-1:4 ] - [ DEBUG ]  This is debug message.
-2016-05-02 20:17:47  [ http-bio-8080-exec-1:5 ] - [ INFO ]  This is info message.
-2016-05-02 20:17:47  [ http-bio-8080-exec-1:6 ] - [ ERROR ]  This is error message.
-2016-05-02 20:19:45  [ http-bio-8080-exec-1:0 ] - [ DEBUG ]  ´ó²¤ÂÜ
-2016-05-02 20:19:45  [ http-bio-8080-exec-1:4 ] - [ DEBUG ]  This is debug message.
-2016-05-02 20:19:45  [ http-bio-8080-exec-1:4 ] - [ INFO ]  This is info message.
-2016-05-02 20:19:45  [ http-bio-8080-exec-1:5 ] - [ ERROR ]  This is error message.
