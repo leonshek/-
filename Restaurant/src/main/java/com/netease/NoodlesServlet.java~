@@ -1,0 +1,53 @@
+package com.netease;
+
+import org.apache.log4j.Logger;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class NoodlesServlet extends HttpServlet {
+
+	private static Logger logger = Logger.getLogger(NoodlesServlet.class);  
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+	response.setContentType("text/html;charset=utf-8");
+	//request.setCharacterEncoding("utf-8");
+	//response.setCharacterEncoding("utf-8");
+
+        PrintWriter writer = response.getWriter();
+	
+        String vegetable = request.getParameter("vegetable");
+	//String vegetable = new String(request.getParameter("vegetable").getBytes("ISO8859_1"),"utf-8");
+        if (vegetable == null) {
+            vegetable = "Tomato";
+        }
+	
+	//response.setCharacterEncoding("utf-8");
+	//response.setContentType("text/html;charset=utf-8");
+
+        writer.println("<html><body>");
+        writer.println("<h1> Noodles with " + vegetable + "</h1>"); 
+        writer.println("</body></html>");
+
+         System.out.println("This is println message.");
+         
+         System.out.println(vegetable);
+         
+         logger.debug(vegetable);
+        // ��¼debug�������Ϣ  
+        logger.debug("This is debug message.");  
+        // ��¼info�������Ϣ  
+        logger.info("This is info message.");  
+        // ��¼error�������Ϣ  
+        logger.error("This is error message.");  
+	
+
+    }
+}
